@@ -58,8 +58,8 @@
                 </li>
                 <li class="nav__item hide">
                     <a href="#" class="nav__link">
-                        <img class="nav__img" id="avatarimg" src="https://avatars.githubusercontent.com/u/96519?v=4" alt="more">
-                        <span id="avatartxt"></span>
+                        <img class="nav__img" id="avatar-image" src="https://avatars.githubusercontent.com/u/96519?v=4" alt="more">
+                        <span id="avatar-text"></span>
                     </a>
                 </li>
                 <li class="nav__item hide">
@@ -69,6 +69,16 @@
                     </a>
                 </li>
             </ul>
+
+            <!-- <div class="search__wrapper">
+                <form id="form" class="form">
+                    <input type="text" class="user__search__txt" id="searchinput" placeholder="Please enter a username">
+                    <button type="submit" class="submit" id="submit" disabled="">
+                        <span class="submit-text">Seach User</span>
+                    </button>
+                    <div id="error" class="error"></div>
+                </form>
+            </div>  -->
     
             <div class="nav__icons">
                 <button>
@@ -80,7 +90,7 @@
                 </button>
     
                 <button class="user__profile">
-                    <img id="avatarsm" src="https://avatars.githubusercontent.com/u/96519?v=4" alt="avatar" class="avatar">
+                    <img id="avatar2" src="https://avatars.githubusercontent.com/u/33642489?s=60&v=4" alt="user-image" class="avatar">
                     <img src="assets/down-arrow.svg" alt="arrow-down" class="arrow__down">
                 </button>
             </div>
@@ -91,7 +101,7 @@
 
     <section class="sect__tabs">
         <div class="container">
-            <div id="tabs-profile" class="tabs-profile">
+            <div id="follow-user" class="follow-enabled">
                 <img src="https://avatars.githubusercontent.com/u/96519?v=4" id="tabs-img">
                 <div class="tabs-info">
                     <span id="tabs-name"></span>
@@ -127,7 +137,7 @@
     <section>
         <div class="container">
 
-            <div class="aside">
+            <div class="profile-px">
                 <div class="profile__pix">
                     <img id="avatar" src="https://avatars.githubusercontent.com/u/96519?v=4" alt="Profile Picture">
                     <div class="smiley">
@@ -167,31 +177,38 @@
                 </div>
                 
                 <div class="search__repo__wrapper">
-                    <input type="text" placeholder="Find a repository..." class="input__search">
+                    <!-- <input type="text" placeholder="Find a repository..." class="input__search"> -->
+                    <div class="user__search__wrapper">
+                        <form id="form" class="form">
+                            <input type="text" class="user__search__txt" id="searchinput" placeholder="Please enter a username">
+                            <button type="submit" class="submit" id="submit" disabled="">
+                                <span class="submit-text">Seach User</span>
+                            </button>
+                            <div id="error" class="error"></div>
+                        </form>
+                    </div>
                 </div>
 
                 <div id="repo-count" class="count">
                 </div>
 
-                <div class="user__search__wrapper">
+                <!-- <div class="user__search__wrapper">
                     <form id="form" class="form">
-                        <input type="text" class="user__search__txt" id="request" placeholder="Please enter a username">
+                        <input type="text" class="user__search__txt" id="searchinput" placeholder="Please enter a username">
                         <button type="submit" class="submit" id="submit" disabled="">
                             <span class="submit-text">Seach User</span>
                         </button>
                         <div id="error" class="error"></div>
                     </form>
-                </div> 
+                </div>  -->
 
-                <div id="repos" class="repos">
+                <div id="userrepo" class="repos">
                     
                 </div>
             </main>
         </div>
     </section>
 
-    
-
-
+    <script src="script.js"></script>
 </body>
 </html>
