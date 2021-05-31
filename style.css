@@ -223,17 +223,17 @@ button.view img {
     cursor: pointer;
 }
 
-.tabs__two {
+/* .tabs__two {
     display: none;
-}
+} */
 
-ul.tabs__section {
+.main__tabs {
     list-style: none;
     display: flex;
     height: 100%;
 }
 
-.tabs__section .tab {
+.main__tabs .tab {
     padding: 1rem 2rem;
     font-size: 1.4rem;
     cursor: pointer;
@@ -242,16 +242,16 @@ ul.tabs__section {
     min-width: 12rem;
 }
 
-.tabs__section .tab:hover {
+.main__tabs .tab:hover {
     border-bottom: 2px solid var(--col-tab-hover);
 }
 
-.tabs__section .tab img {
+.main__tabs .tab img {
     height: 1.5rem;
     margin-right: .5rem;
 }
 
-.tabs__section .tab span {
+.main__tabs .tab span {
     background-color: var(--col-input);
     opacity: 0.7;
     border-radius: 2rem;
@@ -261,11 +261,11 @@ ul.tabs__section {
 
 }
 
-.tabs__section .tab.active__tab {
+.main__tabs .tab.active__tab {
     border-bottom: 2px solid var(--col-tabs-active);
 }
 
-.tabs__info {
+.tabs__two {
     display: none;
 }
 
@@ -676,6 +676,11 @@ ul.tabs__section {
         display: none;
     }
 
+    .submit {
+        padding: .7rem 1.5rem;
+        border-radius: 6px;
+      }
+
     .profile__side {
         display: flex;
         flex-wrap: wrap;
@@ -767,6 +772,10 @@ ul.tabs__section {
         font-size: 1.5rem;
         width: 100%;
     }
+
+    .user__search__txt {
+        font-size: 11px;
+    }
     
     .main {
         margin-bottom: 0;
@@ -776,7 +785,7 @@ ul.tabs__section {
     .tabs__two {
         display: block;
         margin: 0 -2rem;
-        border-bottom: 1px solid var(--line-color);
+        border-bottom: 1px solid var(--col-border-bottom);
         padding: 2rem 0;
         overflow-x: scroll;
         position: sticky;
