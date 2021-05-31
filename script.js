@@ -221,15 +221,15 @@ function formatting(repoName, starCount, forkCount, repoDesc, updated, language)
         
     return `
     <div class="repo">
-                    <div class="repo-info">
-                        <h3 class="repo-name">${repoName}</h3>
-                        <span class="repo-description">${repodesc}</span>
-                        <div class="repo-detail">
+                    <div class="repo__info">
+                        <h3 class="repo__name">${repoName}</h3>
+                        <span class="repo__desc">${repodesc}</span>
+                        <div class="repo__detail">
                         ${lang}${stars}${repoFork}
                             <small>${updated}</small>
                         </div>
                     </div>
-                    <button class="repo-star">
+                    <button class="repo__star">
                         <img src="assets/star.svg" alt="star">
                         Star
                     </button>

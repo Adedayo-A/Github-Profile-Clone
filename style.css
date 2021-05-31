@@ -58,7 +58,7 @@ body, html {
 
 }
 
-.search-field {
+.search__field {
     display: flex;
     margin: 0 2rem;
     border: 1px solid var(--col-border);
@@ -67,7 +67,7 @@ body, html {
     width: 30rem;
 }
 
-.input-search {
+.input__search {
     flex: 1;
     background: transparent;
     border: none; 
@@ -76,11 +76,11 @@ body, html {
     padding: 0 2rem;
 }
 
-.input-search:focus {
+.input__search:focus {
     outline: none;
 }
 
-.search-icon {
+.search__icon {
     margin-right: 1rem;
     align-self: center;
 }
@@ -185,35 +185,35 @@ button.view img {
     background-color: red; */
 }
 
-.follow-enabled {
+.follow__enabled {
     display: flex;
     align-items: center;
     visibility: hidden;
 }
 
-.follow-enabled.visible {
+.follow__enabled.visible {
     visibility: visible;
 }
 
-.follow-enabled img {
+.follow__enabled img {
     width: 3.5rem;
     height: 3.5rem;
     margin-right: .8rem;
     border-radius: 50%;
 }
 
-.tabs-info {
+.tabs__info {
     display: flex;
     flex-direction: column;
 }
 
-.tabs-info span {
+.tabs__info span {
     font-weight: bold;
     font-size: 1.1rem;
     color: var(--col-nav);
 }
 
-.tabs-info button {
+.tabs__info button {
     border: none;
     background-color: var(--col-tabs-info);
     padding: .2rem 1rem;
@@ -221,6 +221,10 @@ button.view img {
     border-radius: .5rem;
     font-weight: 300;
     cursor: pointer;
+}
+
+.tabs__two {
+    display: none;
 }
 
 ul.tabs__section {
@@ -261,7 +265,7 @@ ul.tabs__section {
     border-bottom: 2px solid var(--col-tabs-active);
 }
 
-.inner-tabs {
+.tabs__info {
     display: none;
 }
 
@@ -461,34 +465,34 @@ ul.tabs__section {
     justify-content: space-between;
 }
 
-.repo-info {
+.repo__info {
     width: 50rem;
     padding-right: 3rem;
 }
-.repo-name {
+.repo__name {
     color: var(--col-repository);
     font-size: 1.95rem;
     cursor: pointer;
 }
 
-.repo-description {
+.repo__desc {
     color: var(--col-text);
     font-size: 1.4rem;
 }
 
-.repo-detail {
+.repo__detail {
     margin-top: 1rem;
     display: flex;
     align-items: center;
     color: var(--col-text);
 }
 
-.repo-detail small {
+.repo__detail small {
     margin-right: 2rem;
     font-size: 1.2rem;
 }
 
-.repo-detail img {
+.repo__detail img {
     width: 1.5rem;
     margin-right: .5rem;
 }
@@ -511,7 +515,7 @@ ul.tabs__section {
     width: 1.5rem;
 }
 
-.repo-star {
+.repo__star {
     width: 6.5rem;
     height: 2.8rem;
     margin-top: .5rem;
@@ -527,7 +531,7 @@ ul.tabs__section {
     cursor: pointer;
 }
 
-.repo-star img {
+.repo__star img {
     width: 1.3rem;
     margin-right: 1rem;
 }
@@ -573,7 +577,7 @@ ul.tabs__section {
         padding: 0 2rem;
     }
     
-    .search-bar {
+    .search__field {
         width: 25rem;
         margin: 0 1rem;
     }
@@ -586,15 +590,15 @@ ul.tabs__section {
         width: 30rem;
     }
     
-    .nav-item {
+    .nav__item {
         font-size: 1.4rem;
     }
     
-    .buttons {
+    .nav__icons {
         width: 10rem;
     }
     
-    .buttons button img {
+    .nav__icons button img {
         height: 80%;
     }
     
@@ -604,7 +608,7 @@ ul.tabs__section {
         margin: 2rem;
     }
     
-    .profile-img > img {
+    .profile__pix > img {
         width: 17rem;
         margin-top: -5rem;
     }
@@ -614,16 +618,16 @@ ul.tabs__section {
         display: none;
     }
     
-    .profile-info {
+    .profile__name {
         margin-top: 2rem;
     }
     
-    .profile-info h1 {
+    .profile__name h1 {
         font-size: 3.1rem;
         font-weight: 600;
     }
 
-    .profile-desc {
+    .profile__description {
         padding-right: 3.5rem;
     }
 
@@ -631,22 +635,22 @@ ul.tabs__section {
         padding: 0;
     }
     
-    .repo-info {
+    .repo__info {
         width: 45rem;
     }
 
-    .repo-description {
+    .repo__desc {
         padding-top: 1rem;
         padding-bottom: 1rem;
         padding-right: 12rem;
         display: inline-block;
     }
     
-    .repo-detail {
+    .repo__detail {
         margin-top: .3rem;
     }
     
-    .repo-star {
+    .repo__star {
         margin-top: 0;
         align-self: center;
     }
@@ -664,7 +668,7 @@ ul.tabs__section {
         display: flex;
     }
     
-    .search-bar {
+    .search__field {
         width: 100%;
         margin: 2rem 0;
         height: 3rem;
@@ -672,7 +676,7 @@ ul.tabs__section {
         display: none;
     }
 
-    .profile-px {
+    .profile__side {
         display: flex;
         flex-wrap: wrap;
     }
@@ -681,7 +685,7 @@ ul.tabs__section {
         padding: 0 1rem;
     }
     
-    .search-icon {
+    .search__icon {
         margin-right: 1rem;
     }
     
@@ -696,44 +700,44 @@ ul.tabs__section {
         display: flex;
     }
     
-    .nav-item {
+    .nav__item {
         padding: 1rem 0;
         border-top: 1px solid var(--border-color);
     }
 
-    .nav-item.hidden {
+    .nav__item.hide {
         display: block;
     }
 
-    .nav-link {
+    .nav__link {
         display: flex;
         align-items: center;
     }
-    .nav-img {
+    .nav__img {
         height: 2.5rem;
         margin-right: .7rem;
         border-radius: 50%;
     }
 
-    .nav-img-sm {
+    .nav__img__sm {
         height: 1.3rem;
         margin-right: .7rem;
     }
     
-    .buttons {
+    .nav__icons {
         width: auto;
         margin: 0;
     }
 
-    .buttons button img {
+    .nav__icons button img {
         height: 100%;
     }
     
-    button.more, button.profile {
+    button.view, button.user__profile {
         display: none;
     }
 
-    .tabs {
+    .sect__tabs {
         display: none;
     }
     
@@ -742,27 +746,22 @@ ul.tabs__section {
         grid-template-columns: 1fr;
         min-height: auto;
     }
-
-    .aside {
-        display: flex;
-        flex-wrap: wrap;
-    }
     
-    .profile-img > img {
+    .profile__pix > img {
         width: 5.8rem;
         margin-top: 0;
         margin-right: 2rem;
     }
     
-    .profile-info {
+    .profile__name {
         margin-top: 0;
     }
     
-    .profile-info h1 {
+    .profile__name h1 {
         font-size: 2rem;
     }
 
-    .profile-desc {
+    .profile__description {
         margin-top: 3rem;
         padding: 0;
         font-size: 1.5rem;
@@ -774,7 +773,7 @@ ul.tabs__section {
         overflow-x: hidden;
     }
 
-    .inner-tabs {
+    .tabs__two {
         display: block;
         margin: 0 -2rem;
         border-bottom: 1px solid var(--line-color);
@@ -785,7 +784,7 @@ ul.tabs__section {
         z-index: 1;
     }
 
-    .main-tabs {
+    .main__tabs {
         width: 52rem;
     }
 
@@ -794,30 +793,30 @@ ul.tabs__section {
         grid-template-columns: 2.5fr 1.5fr;
     }
 
-    .repo-name {
+    .repo__name {
         word-break: break-all;
     }
 
-    .repo-info {
+    .repo__info {
         width: auto;
         padding-right: 0;
         flex: 1;
     }
     
-    .repo-description {
+    .repo__desc {
         padding: 0;
     }
     
-    .repo-detail {
+    .repo__detail {
         margin-top: 1rem;
         flex-wrap: wrap;
     }
     
-    .repo-detail small {
+    .repo__detail small {
         word-break: break-all;
     }
     
-    .repo-detail img {
+    .repo__detail img {
         width: 1.5rem;
         margin-right: .5rem;
     }
