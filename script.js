@@ -22,7 +22,7 @@ const avatar = document.getElementById('avatar');
 const avatar2 = document.getElementById('avatar2');
 const avatartext = document.getElementById('avatar-text');
 const tabsimg = document.getElementById('tabs-img');
-const tabsname = document.getElementById('tabs-name');
+const tabsname = document.getElementById('tabsname');
 const tabsprofile = document.getElementById('follow-user');
 
 const toggle = document.getElementById('toggle');
@@ -249,4 +249,12 @@ window.addEventListener('scroll', () => {
       followUser.classList.remove('visible');
     }
 });
+
+toggle.addEventListener('click', e => {
+    let header = e.target.parentElement;
+    if (!header.classList.contains('header')) {
+      header = header.parentElement;
+    }
+    header.classList.toggle('show')
+})
 
