@@ -90,7 +90,7 @@
     </header>
 
     <section class="sect__tabs">
-        <div class="tabs__container">
+        <div class="container">
             <div id="tabs-profile" class="tabs-profile">
                 <img src="https://avatars.githubusercontent.com/u/96519?v=4" id="tabs-img">
                 <div class="tabs-info">
@@ -121,6 +121,72 @@
                 </ul>
             </div>
 
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+
+            <div class="aside">
+                <div class="profile__pix">
+                    <img id="avatar" src="https://avatars.githubusercontent.com/u/96519?v=4" alt="Profile Picture">
+                    <div class="smiley">
+                        <img src="assets/happiness.svg" alt="smiley">
+                    </div>
+                </div>
+                <div class="profile__name">
+                    <h1 id="name"> My Name </h1>
+                    <h2 id="username"> User Name </h2>
+                </div>
+                <p class="profile__description" id="description">
+                    Frontend Software Developer
+                </p>
+            </div>
+            
+            <main class="main">
+                <div class="hide">
+                    <ul class="main-tabs">
+                        <li class="tab">
+                            <img src="assets/book.svg">
+                            Overview
+                        </li>
+                        <li class="tab tab-active">
+                            <img src="assets/agenda.svg">
+                            Repositories
+                            <span id="inner-repo-no">0</span>
+                        </li>
+                        <li class="tab">
+                            <img src="assets/chalkboard.svg">
+                            Projects
+                        </li>
+                        <li class="tab">
+                            <img src="assets/block.svg">
+                            Packages
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="search__repo__wrapper">
+                    <input type="text" placeholder="Find a repository..." class="input__search">
+                </div>
+
+                <div id="repo-count" class="count">
+                </div>
+
+                <div class="user__search__wrapper">
+                    <form id="form" class="form">
+                        <input type="text" class="user__search__txt" id="request" placeholder="Please enter a username">
+                        <button type="submit" class="submit" id="submit" disabled="">
+                            <span class="submit-text">Seach User</span>
+                        </button>
+                        <div id="error" class="error"></div>
+                    </form>
+                </div> 
+
+                <div id="repos" class="repos">
+                    
+                </div>
+            </main>
         </div>
     </section>
 
