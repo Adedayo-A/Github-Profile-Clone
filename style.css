@@ -321,7 +321,7 @@ ul.tabs__section {
     /* border-bottom: 1px solid var(--col-border-bottom); */
 }
 
-.input__search {
+.repo__search {
     height: 3.5rem;
     width: 100%;
     margin: 2rem 0;
